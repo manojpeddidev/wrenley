@@ -1,0 +1,36 @@
+.prodBox{
+    border: 2px solid #d7dce7;
+    border-radius: 0px;
+    img{
+        width: 100%;
+    }
+    .productName{
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(51, 0, 145);
+    }
+    .capacity{
+        font-size: 13px;
+        color: rgb(163, 163, 163);
+    }
+    .tabCount{
+        font-size: 14px;
+    }
+    .oldPrice{
+        text-decoration: line-through;
+        color: #ff5c5c;
+    }
+    .pricePer{
+        color: #009305;
+    }
+    .btnCart{
+        border: 2px solid #3a2c97;
+        font-size: 14px;
+        min-width: 120px;
+        padding: 5px;
+        font-weight: 600;
+        background: transparent;
+        color: #3a2c97;
+        border-radius: 5px;
+    }
+}

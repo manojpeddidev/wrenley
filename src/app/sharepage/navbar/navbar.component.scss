@@ -1,0 +1,65 @@
+
+header{
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    padding: 0px 50px;
+    .nav-link {
+        padding: 0.5rem 1rem;
+        min-width: 120px;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+.bg-light {
+padding: 0px;
+background-color: #fff!important;
+}
+.active-link{
+    font-weight: bold;
+    background: #fff;
+    color: #382b97 !important;
+    border-bottom: 2px solid #382b97;
+}
+.navbar-nav{
+    li:not(:last-child){
+        margin-right: 2rem;
+    }
+}
+.listLocations{
+    border: 0px;
+    border-bottom: 1px solid #382b97;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+.searchfield {
+    .form-control{
+        font-weight: 500;
+    }
+    .fa-search{
+        position: absolute;
+        top: 10px;
+        right: 18px;
+    }
+}
+.listCart{
+    i{
+        font-size: 26px;
+        color: #2e2e3a;
+        text-decoration: none !important;
+    }
+    .count{
+        position: absolute;
+    top: -13px;
+    background: #5ec153;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    padding-top: 3px;
+    right: -15px;
+    }
+}

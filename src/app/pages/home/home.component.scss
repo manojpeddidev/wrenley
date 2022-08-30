@@ -1,0 +1,104 @@
+.bg1,.bg2,.bg3{
+    padding: 15px;
+    color: #a6deff;
+    font-size: 13px;
+    box-shadow: 0px 0px 1px #fff;
+    text-align: center;
+    p{
+        margin-bottom: 0px;
+        min-height: 100px;
+        color: #fff;
+    }
+    h5{
+     font-size: 16px;
+    }
+}
+.anchor{
+    font-size: 16px;
+    display: block;
+    color: #65e3ff;
+    text-decoration: none !important;
+}
+.bg1{
+    background: #088edd;
+}
+.bg2{
+    background: #1977cc;
+}
+.bg3{
+    background: #1063af;
+}
+.firstRow{
+    margin-top: 20px;
+    z-index: 100;
+    position: relative;
+}
+.homeContent{
+    background: #fdfdfd;
+    padding: 20px;
+}
+.homeContent p
+{
+    
+    font-size: 14px;
+    color: #686868;
+}
+.ourProducts{
+    background: #080040;
+    padding: 20px;
+    position: relative;
+}
+.bgOverlay{
+    background-image: url(../../../assets/portfolio.png);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 65% auto;
+    opacity: 0.1;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.portfoliocontent{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.portBox{
+    border-radius: 6px;
+    padding: 15px;
+    margin: 16px 0px;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    &:hover{
+        background: #fff;
+        .portHeader{
+        color: #003858;
+        }
+        p{
+            color: rgb(82, 82, 82);
+        }
+    }
+    a{
+        text-decoration: none !important;
+    }
+    .portHeader{
+        font-size: 22px;
+    text-align: center;
+    color: #a3dafa;
+    }
+    p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+a{
+    font-size: 14px;
+    font-weight: 600;
+}
+}

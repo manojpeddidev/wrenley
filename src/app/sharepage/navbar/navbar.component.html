@@ -1,0 +1,67 @@
+
+<header>
+<div class="row">
+    <div class="col-lg-2">
+        <img src="../../../assets/logo.jpeg" alt="logo" width="150px" routerLink=""/>
+    </div>
+    <div class="col-lg-10">
+        <div class="row">
+            <div class="col-lg-2">
+                <label class="mb-0 mt-3 fnt12px">Your Location</label>
+                <select class="listLocations">
+                    <option>- Select -</option>
+                    <option>Delhi</option>
+                </select>
+            </div>
+            <div class="col-lg-8">
+            <div class="position-relative searchfield">
+                <input type="text" class="form-control mt-2 mb-0" placeholder="Search Medicines" />
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+              
+              <nav class="navbar navbar-expand-lg navbar-light bg-light mt-2">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript: void(0);"  routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript: void(0);"  routerLink="products" routerLinkActive="active-link">PRODUCTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript: void(0);" routerLink="blog" routerLinkActive="active-link">BLOG</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript: void(0);" routerLink="about" routerLinkActive="active-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript: void(0);" routerLink="contact" routerLinkActive="active-link">CONTACT</a>
+                      </li>
+               
+                  </ul>
+                </div>
+            </nav>
+            </div>
+            <div class="col-lg-2 text-right">
+                <ul class="list-inline mb-0 mt-4 listCart">
+                    <li class="list-inline-item mr-4">
+                    <a href="javascript: void(0);" class="position-relative">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="count">01</span>
+                    </a>
+                    </li>
+                    <li class="list-inline-item">
+                    <a href="javascript: void(0);">
+                        <i class="fa fa-user-circle"></i>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</header>
