@@ -1,6 +1,6 @@
 .bg1,.bg2,.bg3{
     padding: 15px;
-    color: #a6deff;
+    color: #fff;
     font-size: 13px;
     box-shadow: 0px 0px 1px #fff;
     text-align: center;
@@ -16,17 +16,17 @@
 .anchor{
     font-size: 16px;
     display: block;
-    color: #65e3ff;
+    color: #f5aaae;
     text-decoration: none !important;
 }
 .bg1{
-    background: #088edd;
+    background: #9b668c;
 }
 .bg2{
-    background: #1977cc;
+    background: #9f4686;
 }
 .bg3{
-    background: #1063af;
+    background: #902a73;
 }
 .firstRow{
     margin-top: 20px;
@@ -44,7 +44,7 @@
     color: #686868;
 }
 .ourProducts{
-    background: #080040;
+    background: #4a0035;
     padding: 20px;
     position: relative;
 }
@@ -73,11 +73,8 @@ a {color: #912a70;}
     padding: 15px;
     margin: 16px 0px;
     color: #f5aaae;
-    border: 1px solid #f5aaae;
+    border: 1px solid #c9a2a4;
     cursor: pointer;
-    a{
-
-    }
     &:hover{
         background: #fff;
         .portHeader{
