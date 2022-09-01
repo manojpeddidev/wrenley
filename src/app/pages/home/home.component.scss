@@ -67,17 +67,21 @@
     font-size: 14px;
     text-align: center;
 }
+a {color: #912a70;}
 .portBox{
     border-radius: 6px;
     padding: 15px;
     margin: 16px 0px;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #f5aaae;
+    border: 1px solid #f5aaae;
     cursor: pointer;
+    a{
+
+    }
     &:hover{
         background: #fff;
         .portHeader{
-        color: #003858;
+        color: #912a70;
         }
         p{
             color: rgb(82, 82, 82);
@@ -89,7 +93,7 @@
     .portHeader{
         font-size: 22px;
     text-align: center;
-    color: #a3dafa;
+    color: #f5aaae;
     }
     p{
     color: #fff;

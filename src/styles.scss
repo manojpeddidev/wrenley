@@ -14,7 +14,7 @@ body{
     color: #fff;
 }
 .mainStrip{
-    background: #3a2c97;
+    background: #912a70;
     h4{
         font-weight: 600;
         color: #fff;
@@ -24,11 +24,23 @@ body{
             font-size: 12px;
             color: #ccc;
             a{
-                color: #52bfff;
+                color: #f8aaae;
                 text-decoration: none !important;
             }
         }
         
+    }
+}
+.btnCommon{
+    border-radius: 50px;
+    border: 2px solid #912a70;
+    padding: 10px 20px;
+    background: #fff;
+    color: #912a70;
+    font-weight: 600;
+    &:hover{
+        background: #912a70;
+        color: #fff;
     }
 }
 .bgDivOne{
@@ -48,11 +60,9 @@ body{
 .mainHeading{
     
     img{
-        width: 50px;
         position: relative;
         top: -22px;
-        left: -6px;
-        
+        left: 0px;
         }
 }
 

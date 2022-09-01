@@ -1,13 +1,21 @@
 .prodBox{
     border: 2px solid #d7dce7;
     border-radius: 0px;
+    &:hover{
+        border: 2px solid #f8aaae;
+        .btnCart{
+            transition: all 0.5s ease-in-out;
+            background: #912a70 !important;
+            color: #fff !important;
+        }
+    }
     img{
         width: 100%;
     }
     .productName{
         font-size: 14px;
         font-weight: 600;
-        color: rgb(51, 0, 145);
+        color: #000;
     }
     .capacity{
         font-size: 13px;
@@ -24,13 +32,13 @@
         color: #009305;
     }
     .btnCart{
-        border: 2px solid #3a2c97;
+        border: 2px solid #912a70;
         font-size: 14px;
         min-width: 120px;
         padding: 5px;
         font-weight: 600;
         background: transparent;
-        color: #3a2c97;
+        color: #912a70;
         border-radius: 5px;
     }
 }
