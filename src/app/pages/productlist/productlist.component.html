@@ -16,222 +16,33 @@
 </div>
 <div class="container mt-5 mb-4">
     <div class="row">
-       <div class="col-3">
+       <div class="col-3" *ngFor="let pd of productData">
           <div class="prodBox mb-3">
-            <img src="../../../assets/prod-img8.jpg" alt="Medicine"/>
+            <img src="{{pd.productImg}}" alt="Medicine"/>
         <div class="p-3">
-            <div class="productName">
-                VITAMIN E TABLETS
-            </div>
-            <div class="capacity">
-                500mg
-            </div>
-            <div class="tabCount">
-                60 TABLETS
-            </div>
-            <div class="tabPrice mt-1 mb-2">
-                <strong class="newPrice">
-                    <i class="fa fa-inr"></i>&nbsp; 450
-                </strong>&nbsp;&nbsp;
-                <span class="oldPrice"><i class="fa fa-inr"></i>&nbsp; 500</span>&nbsp;
-                <span class="pricePer">10% off</span>
-            </div>
-        <div class="text-center">
-            <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
-            <button class="btnCart"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
-        </div>
-        </div>
+                <div class="productName">
+                    {{pd.tabName}}
+                </div>
+                <div class="capacity">
+                    {{pd.pCapacity}}
+                </div>
+                <div class="tabCount">
+                    {{pd.nofTablets}} TABLETS
+                </div>
+                <div class="tabPrice mt-1 mb-2">
+                    <strong class="newPrice">
+                        <i class="fa fa-inr"></i>&nbsp; {{pd.offerPrice}}
+                    </strong>&nbsp;&nbsp;
+                    <span class="oldPrice"><i class="fa fa-inr"></i>&nbsp; {{pd.actualPrice}}</span>&nbsp;
+                    <span class="pricePer">{{pd.pricePercentile}}% off</span>
+                </div>
+                <div class="text-center">
+                    <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
+                    <button class="btnCart" [routerLink]="['/products', pd.id]"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
+                </div>
+             </div>
           </div>
        </div>
-       <div class="col-3">
-        <div class="prodBox mb-3">
-          <img src="../../../assets/prod-img8.jpg" alt="Medicine"/>
-      <div class="p-3">
-          <div class="productName">
-              VITAMIN E TABLETS
-          </div>
-          <div class="capacity">
-              500mg
-          </div>
-          <div class="tabCount">
-              60 TABLETS
-          </div>
-          <div class="tabPrice mt-1 mb-2">
-              <strong class="newPrice">
-                  <i class="fa fa-inr"></i>&nbsp; 450
-              </strong>&nbsp;&nbsp;
-              <span class="oldPrice"><i class="fa fa-inr"></i>&nbsp; 500</span>&nbsp;
-              <span class="pricePer">10% off</span>
-          </div>
-      <div class="text-center">
-        <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
-        <button class="btnCart"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
-      </div>
-      </div>
-        </div>
-     </div>
-     <div class="col-3">
-        <div class="prodBox mb-3">
-          <img src="../../../assets/prod-img8.jpg" alt="Medicine"/>
-      <div class="p-3">
-          <div class="productName">
-              VITAMIN E TABLETS
-          </div>
-          <div class="capacity">
-              500mg
-          </div>
-          <div class="tabCount">
-              60 TABLETS
-          </div>
-          <div class="tabPrice mt-1 mb-2">
-              <strong class="newPrice">
-                  <i class="fa fa-inr"></i>&nbsp; 450
-              </strong>&nbsp;&nbsp;
-              <span class="oldPrice"><i class="fa fa-inr"></i>&nbsp; 500</span>&nbsp;
-              <span class="pricePer">10% off</span>
-          </div>
-      <div class="text-center">
-        <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
-        <button class="btnCart"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
-      </div>
-      </div>
-        </div>
-     </div>
-     <div class="col-3">
-        <div class="prodBox mb-3">
-          <img src="../../../assets/prod-img8.jpg" alt="Medicine"/>
-      <div class="p-3">
-          <div class="productName">
-              VITAMIN E TABLETS
-          </div>
-          <div class="capacity">
-              500mg
-          </div>
-          <div class="tabCount">
-              60 TABLETS
-          </div>
-          <div class="tabPrice mt-1 mb-2">
-              <strong class="newPrice">
-                  <i class="fa fa-inr"></i>&nbsp; 450
-              </strong>&nbsp;&nbsp;
-              <span class="oldPrice"><i class="fa fa-inr"></i>&nbsp; 500</span>&nbsp;
-              <span class="pricePer">10% off</span>
-          </div>
-      <div class="text-center">
-        <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
-        <button class="btnCart"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
-      </div>
-      </div>
-        </div>
-     </div>
-     <div class="col-3">
-        <div class="prodBox mb-3">
-          <img src="../../../assets/prod-img8.jpg" alt="Medicine"/>
-      <div class="p-3">
-          <div class="productName">
-              VITAMIN E TABLETS
-          </div>
-          <div class="capacity">
-              500mg
-          </div>
-          <div class="tabCount">
-              60 TABLETS
-          </div>
-          <div class="tabPrice mt-1 mb-2">
-              <strong class="newPrice">
-                  <i class="fa fa-inr"></i>&nbsp; 450
-              </strong>&nbsp;&nbsp;
-              <span class="oldPrice"><i class="fa fa-inr"></i>&nbsp; 500</span>&nbsp;
-              <span class="pricePer">10% off</span>
-          </div>
-      <div class="text-center">
-        <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
-        <button class="btnCart"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
-      </div>
-      </div>
-        </div>
-     </div>
-     <div class="col-3">
-        <div class="prodBox mb-3">
-          <img src="../../../assets/prod-img8.jpg" alt="Medicine"/>
-      <div class="p-3">
-          <div class="productName">
-              VITAMIN E TABLETS
-          </div>
-          <div class="capacity">
-              500mg
-          </div>
-          <div class="tabCount">
-              60 TABLETS
-          </div>
-          <div class="tabPrice mt-1 mb-2">
-              <strong class="newPrice">
-                  <i class="fa fa-inr"></i>&nbsp; 450
-              </strong>&nbsp;&nbsp;
-              <span class="oldPrice"><i class="fa fa-inr"></i>&nbsp; 500</span>&nbsp;
-              <span class="pricePer">10% off</span>
-          </div>
-      <div class="text-center">
-        <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
-        <button class="btnCart"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
-      </div>
-      </div>
-        </div>
-     </div>
-     <div class="col-3">
-        <div class="prodBox mb-3">
-          <img src="../../../assets/prod-img8.jpg" alt="Medicine"/>
-      <div class="p-3">
-          <div class="productName">
-              VITAMIN E TABLETS
-          </div>
-          <div class="capacity">
-              500mg
-          </div>
-          <div class="tabCount">
-              60 TABLETS
-          </div>
-          <div class="tabPrice mt-1 mb-2">
-              <strong class="newPrice">
-                  <i class="fa fa-inr"></i>&nbsp; 450
-              </strong>&nbsp;&nbsp;
-              <span class="oldPrice"><i class="fa fa-inr"></i>&nbsp; 500</span>&nbsp;
-              <span class="pricePer">10% off</span>
-          </div>
-          <div class="text-center">
-            <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
-            <button class="btnCart"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
-        </div>
-      </div>
-        </div>
-     </div>
-     <div class="col-3">
-        <div class="prodBox mb-3">
-          <img src="../../../assets/prod-img8.jpg" alt="Medicine"/>
-      <div class="p-3">
-          <div class="productName">
-              VITAMIN E TABLETS
-          </div>
-          <div class="capacity">
-              500mg
-          </div>
-          <div class="tabCount">
-              60 TABLETS
-          </div>
-          <div class="tabPrice mt-1 mb-2">
-              <strong class="newPrice">
-                  <i class="fa fa-inr"></i>&nbsp; 450
-              </strong>&nbsp;&nbsp;
-              <span class="oldPrice"><i class="fa fa-inr"></i>&nbsp; 500</span>&nbsp;
-              <span class="pricePer">10% off</span>
-          </div>
-      <div class="text-center">
-          <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
-          <button class="btnCart"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
-      </div>
-      </div>
-        </div>
-     </div>
     </div>
 </div>
 
