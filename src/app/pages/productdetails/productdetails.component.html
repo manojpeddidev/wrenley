@@ -1,11 +1,95 @@
-<div class="mt-4 mb-4 container">
+<div class="mainStrip">
+    <div class="bgDivOne">
+    <div class="container pt-3 pb-3">
+        <h4>{{productDetails.productName}}</h4>
+        <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+                <a href="javascript: void(0);"  routerLink=""><i class="fa fa-home"></i>&nbsp;HOME</a>
+            </li>
+            <li class="list-inline-item">/</li>
+            <li class="list-inline-item">
+                <a href="javascript: void(0);"  routerLink="../../products">PRODUCT LIST</a>
+            </li>
+            <li class="list-inline-item">/</li>
+            <li class="list-inline-item">
+                {{productDetails.productName}}
+            </li>
+        </ul>
+    </div>
+    </div>
+</div>
+<div class="container mt-5 mb-4">
     <div class="row">
-        <div class="col-6" *ngIf="productData">
-            <img src="{{productData[0].productImg}}" alt="Medicine Image"/>
-            <h2>{{productData[0].tabName}}</h2>
+        <div class="col-6" >
+            <img src="{{productDetails.productImg}}" width="100%" alt="Medicine Image"/>
         </div>
         <div class="col-6">
             <h2>Order Form</h2>
+            <div class="form-group">
+               <input type="text" placeholder="FULL NAME *" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="MOBILE NUMBER *" class="form-control" />
+             </div>
+             <div class="form-group">
+                <input type="text" placeholder="QUANTITY *" class="form-control" />
+             </div>
+             <div class="form-group">
+                <textarea class="form-control" placeholder="ADDRESS *">
+
+                </textarea>
+             </div>
+             <div class="text-center">
+              <button class="btnReset">RESET</button>&nbsp;&nbsp;
+              <button class="btnFilled">SUBMIT</button>
+             </div>
         </div>
     </div>
+    <div class="row mt-4">
+        <div class="col-12 pTabs">
+            <tabset [justified]="false">
+                <tab heading="Product Information">
+                    <div class="p-4">
+                       <p>
+                        One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
+                        </p>
+                        <p>
+                        One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
+                       </p>
+                    </div>
+                </tab>
+                <tab heading="Key Ingredients">
+                    <div class="contentOne p-4">
+                    <table class="table">
+                        <tbody>
+                          <tr>
+                            <th>Brand</th>
+                            <td>Mark</td>
+                          </tr>
+                          <tr>
+                            <th>Color</th>
+                            <td>Mark</td>
+                          </tr>
+                          <tr>
+                            <th>1</th>
+                            <td>Mark</td>
+                          </tr>
+                       
+                        </tbody>
+                      </table>
+                    </div>
+                </tab>
+                
+                <tab heading="Benefits">
+                    <div class="contentOne p-4">
+                   <ol>
+                       <li>Benefits 1</li>
+                       <li>Benefits 2</li>
+                       <li>Benefits 3</li>
+                   </ol>
+                </div>
+                </tab>
+              </tabset>
+        </div>
+    </div> 
 </div>

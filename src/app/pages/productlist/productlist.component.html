@@ -21,7 +21,7 @@
             <img src="{{pd.productImg}}" alt="Medicine"/>
         <div class="p-3">
                 <div class="productName">
-                    {{pd.tabName}}
+                    {{pd.productName}}
                 </div>
                 <div class="capacity">
                     {{pd.pCapacity}}
@@ -38,7 +38,7 @@
                 </div>
                 <div class="text-center">
                     <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
-                    <button class="btnCart" [routerLink]="['/products', pd.id]"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
+                    <button class="btnCart" [routerLink]="['/productdetails', pd.id]"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW CART</span></button>
                 </div>
              </div>
           </div>

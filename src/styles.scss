@@ -43,6 +43,30 @@ body{
         color: #fff;
     }
 }
+.btnFilled,.btnReset{
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 600;
+    min-width: 150px;
+}
+.btnFilled{
+    background: #912a70;
+    color: #fff;
+    border: 2px solid #912a70;
+    &:hover{
+        background: #fff;
+        color: #912a70;
+    }
+}
+.btnReset{
+    background: #ccc;
+    color: #888;
+    border: 2px solid #888;
+    &:hover{
+        background: #fff;
+        color: #888;
+    }
+}
 .bgDivOne{
     background-image: url(assets/strip.png);
     background-position: right;
@@ -101,4 +125,20 @@ body{
             right: 40%;
         }
     }
+}
+.pTabs{
+    font-size: 14px;
+    .nav-tabs .nav-link {
+        margin-bottom: -1px;
+        border: 0px solid transparent;
+        min-width: 200px;
+        text-align: center;
+        color: #8d8d8d;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+        color: #912a70;
+        border-bottom: 2px solid #912a70;
+        font-weight: 600;
+    }
+   
 }

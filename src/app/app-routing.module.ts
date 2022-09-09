@@ -9,11 +9,12 @@ import { ProductdetailsComponent } from './pages/productdetails/productdetails.c
 
 
 
+
 const routes: Routes = [
  {path: '', component: HomeComponent},
  {path: 'about', component: AboutusComponent},
  {path: 'products', component: ProductlistComponent},
- {path: 'products/:id', component: ProductdetailsComponent},
+ {path: 'productdetails/:id', component: ProductdetailsComponent},
  {path: 'contact', component: ContactComponent},
  {path: 'blog', component: BlogComponent},
 ];

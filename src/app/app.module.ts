@@ -14,7 +14,9 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProductlistComponent } from './pages/productlist/productlist.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ProductdetailsComponent } from './pages/productdetails/productdetails.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,13 +29,16 @@ import { ProductdetailsComponent } from './pages/productdetails/productdetails.c
     ProductlistComponent,
     BlogComponent,
     ProductdetailsComponent,
+    
   ],
   imports: [
     BrowserModule,
     CarouselModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    TabsModule.forRoot(),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,97 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "categoryId": 2,
+        "productName": "VITAMIN A",
+        "description" : "lorem ipsum dolor",
+         "pCapacity": "500mg",
+       "nofTablets": 60,
+       "offerPrice": 450,
+       "actualPrice": 500,
+       "pricePercentile": 10,
+       "productImg": "../../../assets/tab1.jpg"
+      },
+      {
+        "id": 2,
+        "categoryId": 2,
+        "productName": "VITAMIN B",
+        "description" : "lorem ipsum dolor",
+         "pCapacity": "500mg",
+       "nofTablets": 60,
+       "offerPrice": 450,
+       "actualPrice": 500,
+       "pricePercentile": 10,
+       "productImg": "../../../assets/tab2.jpg"
+      },
+      {
+        "id": 3,
+        "categoryId": 2,
+        "productName": "VITAMIN C",
+        "description" : "lorem ipsum dolor",
+         "pCapacity": "500mg",
+       "nofTablets": 60,
+       "offerPrice": 450,
+       "actualPrice": 500,
+       "pricePercentile": 10,
+       "productImg": "../../../assets/tab3.jpg"
+      },
+      {
+        "id": 4,
+        "categoryId": 2,
+        "productName": "VITAMIN D",
+        "description" : "lorem ipsum dolor",
+         "pCapacity": "500mg",
+       "nofTablets": 60,
+       "offerPrice": 450,
+       "actualPrice": 500,
+       "pricePercentile": 10,
+       "productImg": "../../../assets/tab4.jpg"
+      },
+      {
+        "id": 5,
+        "categoryId": 2,
+        "productName": "VITAMIN E",
+        "description" : "lorem ipsum dolor",
+         "pCapacity": "500mg",
+       "nofTablets": 60,
+       "offerPrice": 450,
+       "actualPrice": 500,
+       "pricePercentile": 10,
+       "productImg": "../../../assets/tab2.jpg"
+      }
+  
+    ],
+    "categories": [
+      {
+        "id": 1,
+        "categoryName": "Cat 1"
+      },
+      {
+        "id": 2,
+        "categoryName": "Cat 2"
+      },
+      {
+        "id": 3,
+        "categoryName": "Cat 3"
+      },
+      {
+        "id": 4,
+        "categoryName": "Cat 4"
+      },
+      {
+        "id": 5,
+        "categoryName": "Cat 5"
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
