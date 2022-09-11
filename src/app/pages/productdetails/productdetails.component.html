@@ -20,76 +20,80 @@
 </div>
 <div class="container mt-5 mb-4">
     <div class="row">
-        <div class="col-6" >
+        <div class="col-4" >
             <img src="{{productDetails.productImg}}" width="100%" alt="Medicine Image"/>
         </div>
-        <div class="col-6">
-            <h2>Order Form</h2>
-            <div class="form-group">
-               <input type="text" placeholder="FULL NAME *" class="form-control" />
+        <div class="col-4">
+            <div class="tabDetails">
+               <h2 class="">{{productDetails.productName}}</h2>
+               <div class="t1">
+                MANUFACTURER
+               </div>
+               <div class="t2 mb-3">
+                Wrenley Pharma
+               </div>
+               <div class="t1">
+                COMPOSITION
+               </div>
+               <div class="t2 mb-3">
+                Paracetamol 650 MG
+               </div>
+               <div class="t1">
+                STORAGE
+               </div>
+               <div class="t2 mb-3">
+                Store below 30°C
+               </div>
             </div>
-            <div class="form-group">
-                <input type="text" placeholder="MOBILE NUMBER *" class="form-control" />
-             </div>
-             <div class="form-group">
-                <input type="text" placeholder="QUANTITY *" class="form-control" />
-             </div>
-             <div class="form-group">
-                <textarea class="form-control" placeholder="ADDRESS *">
-
-                </textarea>
-             </div>
-             <div class="text-center">
-              <button class="btnReset">RESET</button>&nbsp;&nbsp;
-              <button class="btnFilled">SUBMIT</button>
-             </div>
+            
+        </div>
+        <div class="col-4">
+            <div class="tabDetails2">
+                <div class="strip">
+                    PRICE DETAILS
+                </div>
+                <div class="pl-3 pr-2">
+                    <div class="mrp">
+                        MRP&nbsp;<i class="fa fa-inr" aria-hidden="true"></i>&nbsp;
+                        <span class="strikout">500</span>&nbsp;&nbsp;&nbsp;<span class="peroffer">10% OFF</span>
+                       </div>
+                       <div class="offerPrice">
+                        <i class="fa fa-inr" aria-hidden="true"></i>&nbsp;450
+                       </div>
+                       <div class="mb-2 mt-2 c1">Inclusive of all taxes</div>
+                       <div class="mb-2 mt-2 c1">15 tablets in 1 strip</div>
+                </div>
+               
+                 <div class="text-center mb-3">
+                  <button class="btnFilled">ADD TO CART</button>
+                 </div>
+            </div>
+            
         </div>
     </div>
     <div class="row mt-4">
         <div class="col-12 pTabs">
-            <tabset [justified]="false">
-                <tab heading="Product Information">
-                    <div class="p-4">
-                       <p>
-                        One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
-                        </p>
-                        <p>
-                        One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
-                       </p>
-                    </div>
-                </tab>
-                <tab heading="Key Ingredients">
-                    <div class="contentOne p-4">
-                    <table class="table">
-                        <tbody>
-                          <tr>
-                            <th>Brand</th>
-                            <td>Mark</td>
-                          </tr>
-                          <tr>
-                            <th>Color</th>
-                            <td>Mark</td>
-                          </tr>
-                          <tr>
-                            <th>1</th>
-                            <td>Mark</td>
-                          </tr>
-                       
-                        </tbody>
-                      </table>
-                    </div>
-                </tab>
+            <h4>Product Information</h4>
+            <div class="pb-2">
+                <p>
+                 One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
+                 </p>
                 
-                <tab heading="Benefits">
-                    <div class="contentOne p-4">
-                   <ol>
-                       <li>Benefits 1</li>
-                       <li>Benefits 2</li>
-                       <li>Benefits 3</li>
-                   </ol>
-                </div>
-                </tab>
-              </tabset>
+             </div>
+             <h4>Benefits</h4>
+            <div class="pb-2">
+                <p>
+                 One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
+                 </p>
+                
+             </div>
+             <h4>Side Effects</h4>
+            <div class="pb-2">
+                <p>
+                 One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
+                 </p>
+                
+             </div>
         </div>
     </div> 
 </div>

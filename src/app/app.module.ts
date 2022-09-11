@@ -17,6 +17,9 @@ import { ProductdetailsComponent } from './pages/productdetails/productdetails.c
 import { TabsModule } from 'ngx-bootstrap/tabs';
 
 import { HttpClientModule } from '@angular/common/http';
+import { TermsandconditionsComponent } from './pages/termsandconditions/termsandconditions.component';
+import { PrivacypolicyComponent } from './pages/privacypolicy/privacypolicy.component';
+import { CareersComponent } from './pages/careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { HttpClientModule } from '@angular/common/http';
     ProductlistComponent,
     BlogComponent,
     ProductdetailsComponent,
+    TermsandconditionsComponent,
+    PrivacypolicyComponent,
+    CareersComponent,
     
   ],
   imports: [

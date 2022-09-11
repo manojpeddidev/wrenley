@@ -2,3 +2,53 @@
     width: 60%;
     margin: auto;
 }
+.tabDetails{
+    color: #6a3e5c;
+    font-size: 14px;
+    h2{
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
+    .t1{
+        font-weight: 600;
+    }
+}
+.tabDetails2{
+    border: 1px solid #ffe5e7;
+    border-radius: 5px;
+    font-size: 14px;
+    .strip{
+        background: #ffe5e7;
+    border-radius: 5px 5px 0px 0px;
+    padding: 6px 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    }
+}
+.strikout{
+text-decoration: line-through;
+}
+.peroffer{
+    color: #57c55d;
+    font-weight: 600;
+}
+.c1{
+    font-size: 12px;
+    color: #a1a1a1;
+    font-size: 13px;
+}
+.offerPrice{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+.pTabs {
+    font-size: 12px;
+    color: #747474;
+    h4{
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
