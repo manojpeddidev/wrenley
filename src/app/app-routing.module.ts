@@ -9,6 +9,7 @@ import { ProductdetailsComponent } from './pages/productdetails/productdetails.c
 import { CareersComponent } from './pages/careers/careers.component';
 import { TermsandconditionsComponent } from './pages/termsandconditions/termsandconditions.component';
 import { PrivacypolicyComponent } from './pages/privacypolicy/privacypolicy.component';
+import { ShopcartComponent } from './pages/shopcart/shopcart.component';
 
 
 
@@ -23,6 +24,7 @@ const routes: Routes = [
  {path: 'careers', component: CareersComponent},
  {path: 'termsandconditions', component: TermsandconditionsComponent},
  {path: 'privacypolicy', component: PrivacypolicyComponent},
+ {path: 'shopcart', component: ShopcartComponent}
 ];
 
 @NgModule({

@@ -1,0 +1,38 @@
+.product-remove{
+    i{
+        color: #ff0000;
+        cursor: pointer;
+    }
+}
+
+table.tbl-shopping-cart .product-name .variation {
+    font-size: 0.9rem;
+    list-style: none;
+}
+
+
+table.tbl-shopping-cart .quantity .qty {
+    background: #fff none repeat scroll 0 0;
+    text-align: center;
+    width: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    height: 38px;
+    border-radius: 5px;
+}
+table.tbl-shopping-cart .product-name a {
+    color: #081340;
+    font-weight: 600;
+}
+table.tbl-shopping-cart img {
+    width: 64px;
+    box-shadow: none;
+}
+table.tbl-shopping-cart th, table.tbl-shopping-cart td {
+    vertical-align: middle;
+}
+.comment-body .comment-text table th {
+    padding: 10px 20px;
+    border: 1px solid #e6e6e6;
+}

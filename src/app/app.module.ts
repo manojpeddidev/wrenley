@@ -20,6 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { TermsandconditionsComponent } from './pages/termsandconditions/termsandconditions.component';
 import { PrivacypolicyComponent } from './pages/privacypolicy/privacypolicy.component';
 import { CareersComponent } from './pages/careers/careers.component';
+import { ShopcartComponent } from './pages/shopcart/shopcart.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { CareersComponent } from './pages/careers/careers.component';
     TermsandconditionsComponent,
     PrivacypolicyComponent,
     CareersComponent,
+    ShopcartComponent,
     
   ],
   imports: [
@@ -44,6 +47,7 @@ import { CareersComponent } from './pages/careers/careers.component';
     AppRoutingModule,
     FormsModule,
     TabsModule.forRoot(),
+    ModalModule.forRoot(),
     HttpClientModule
   ],
   providers: [],
