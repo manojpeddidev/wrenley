@@ -10,14 +10,15 @@ import { CareersComponent } from './pages/careers/careers.component';
 import { TermsandconditionsComponent } from './pages/termsandconditions/termsandconditions.component';
 import { PrivacypolicyComponent } from './pages/privacypolicy/privacypolicy.component';
 import { ShopcartComponent } from './pages/shopcart/shopcart.component';
+import { ProductsResolver } from './services/product-resolver';
 
 
 
 
 const routes: Routes = [
- {path: '', component: HomeComponent}, 
+ {path: '', component: HomeComponent},
  {path: 'about', component: AboutusComponent},
- {path: 'products', component: ProductlistComponent},
+ {path: 'products', component: ProductlistComponent}, //, resolve: { productsData: ProductsResolver }
  {path: 'productdetails/:id', component: ProductdetailsComponent},
  {path: 'contact', component: ContactComponent},
  {path: 'blog', component: BlogComponent},

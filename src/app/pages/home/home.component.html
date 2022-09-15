@@ -1,13 +1,13 @@
  <owl-carousel-o [options]="customOptions">
     <ng-template carouselSlide>
         <img src="../../../assets/bg3.jpg" alt="image" width="100%"/>
-    </ng-template>  
+    </ng-template>
     <ng-template carouselSlide>
         <img src="../../../assets/bg3.jpg" alt="image" width="100%"/>
-    </ng-template>  
+    </ng-template>
     <ng-template carouselSlide>
         <img src="../../../assets/bg3.jpg" alt="image" width="100%"/>
-    </ng-template>  
+    </ng-template>
   </owl-carousel-o>
   <div class="row firstRow m-0 mb-3">
     <div class="col-12 p-0">
@@ -52,7 +52,7 @@ global citizenship strategy.
     </div>
 </div>
 <div class="container">
-    
+
    <div class="row firstRow mb-3">
       <div class="col-4 p-0">
         <div class="bg1">
@@ -84,7 +84,7 @@ Excellence in Ethics and sales with highest customer satisfaction is what we str
     </div>
       </div>
    </div>
-</div> 
+</div>
 
 <div class="ourProducts">
     <div class="bgOverlay"></div>
@@ -105,9 +105,9 @@ therapeutic areas listed bellow.
         </p>
         <div class="row">
             <div class="col-4">
-            <div class="portBox" routerLink="products">
+            <div class="portBox" [routerLink]="['/products']" [queryParams]="{ category: 'Gastroenterology'}">
                 <div class="portHeader">
-                    <i class="fa fa-medkit"></i> &nbsp; Gastroenterology
+                    <i class="fa fa-medkit" ></i> &nbsp; Gastroenterology
                 </div>
                 <p class="portfoliocontent">
                     We focus on Innovation, we have a broad quality product portfolio across various
@@ -117,9 +117,9 @@ therapeutic areas listed bellow.
             </div>
             </div>
             <div class="col-4">
-                <div class="portBox" routerLink="products">
+                <div class="portBox" [routerLink]="['/products']" [queryParams]="{ category: 'Gynecology'}">
                     <div class="portHeader">
-                        <i class="fa fa-medkit"></i> &nbsp; Gynecology
+                        <i class="fa fa-medkit" ></i> &nbsp; Gynecology
                     </div>
                     <p class="portfoliocontent">
                         We focus on Innovation, we have a broad quality product portfolio across various
@@ -129,7 +129,7 @@ therapeutic areas listed bellow.
                 </div>
                 </div>
                 <div class="col-4">
-                    <div class="portBox" routerLink="products">
+                    <div class="portBox" [routerLink]="['/products']" [queryParams]="{ category: 'Orthopedics'}">
                         <div class="portHeader">
                             <i class="fa fa-medkit"></i> &nbsp; Orthopedics
                         </div>
@@ -141,7 +141,7 @@ therapeutic areas listed bellow.
                     </div>
                     </div>
                     <div class="col-4">
-                        <div class="portBox" routerLink="products">
+                        <div class="portBox" [routerLink]="['/products']" [queryParams]="{ category: 'Respiratory'}">
                             <div class="portHeader">
                                 <i class="fa fa-medkit"></i> &nbsp; Respiratory
                             </div>
@@ -153,7 +153,7 @@ therapeutic areas listed bellow.
                         </div>
                         </div>
                         <div class="col-4">
-                            <div class="portBox" routerLink="products">
+                            <div class="portBox" [routerLink]="['/products']" [queryParams]="{ category: 'Anti-infective'}">
                                 <div class="portHeader">
                                     <i class="fa fa-medkit"></i> &nbsp; Anti-infective
                                 </div>
@@ -165,7 +165,7 @@ therapeutic areas listed bellow.
                             </div>
                             </div>
                             <div class="col-4">
-                                <div class="portBox" routerLink="products">
+                                <div class="portBox" [routerLink]="['/products']" [queryParams]="{ category: 'Anti-allergy'}">
                                     <div class="portHeader">
                                         <i class="fa fa-medkit"></i> &nbsp; Anti allergy
                                     </div>
@@ -176,7 +176,7 @@ therapeutic areas listed bellow.
                                     <a href="javascript: void(0);" class="text-center d-block">VIEW PRODUCTS</a>
                                 </div>
                                 </div>
-            
+
         </div>
     </div>
 </div>
@@ -184,7 +184,7 @@ therapeutic areas listed bellow.
 <div class="row firstRow m-0 mt-3 mb-3">
     <div class="col-12 p-0">
         <h5 class="position-relative mainHeading text-center mt-3 mb-0">
-            BELIEVES AND VALUES 
+            BELIEVES AND VALUES
         </h5>
         <div class="text-center titleImg">
             <img src="../../../assets/title-icon.png" alt="logo Fav"/>
@@ -218,7 +218,7 @@ and procedures, and shared ethical principles and values.
                     Manufacturing Facilities complying Global standards.
                 </p>
             </div>
-            
+
         </div>
     </div>
 </div>

@@ -22,6 +22,8 @@ import { PrivacypolicyComponent } from './pages/privacypolicy/privacypolicy.comp
 import { CareersComponent } from './pages/careers/careers.component';
 import { ShopcartComponent } from './pages/shopcart/shopcart.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { AutocompleteLibModule } from 'angular-ng-autocomplete';
+// import { ProductsResolver } from './services/product-resolver';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     PrivacypolicyComponent,
     CareersComponent,
     ShopcartComponent,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     FormsModule,
     TabsModule.forRoot(),
     ModalModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    AutocompleteLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]

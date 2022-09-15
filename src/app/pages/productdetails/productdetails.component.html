@@ -1,7 +1,7 @@
 <div class="mainStrip">
     <div class="bgDivOne">
     <div class="container pt-3 pb-3">
-        <h4>{{productDetails.productName}}</h4>
+        <h4>{{productDetails?.productName}}</h4>
         <ul class="list-inline mb-0">
             <li class="list-inline-item">
                 <a href="javascript: void(0);"  routerLink=""><i class="fa fa-home"></i>&nbsp;HOME</a>
@@ -12,21 +12,21 @@
             </li>
             <li class="list-inline-item">/</li>
             <li class="list-inline-item">
-                {{productDetails.productName}}
+                {{productDetails?.productName}}
             </li>
         </ul>
     </div>
     </div>
 </div>
 <div class="container mt-5 mb-4">
-    
+
     <div class="row">
         <div class="col-4" >
-            <img src="{{productDetails.productImg}}" width="100%" alt="Medicine Image"/>
+            <img src="{{productDetails?.productImg}}" width="100%" alt="Medicine Image"/>
         </div>
         <div class="col-4">
             <div class="tabDetails">
-               <h2 class="">{{productDetails.productName}}</h2>
+               <h2 class="">{{productDetails?.productName}}</h2>
                <div class="t1">
                 MANUFACTURER
                </div>
@@ -46,7 +46,7 @@
                 Store below 30°C
                </div>
             </div>
-            
+
         </div>
         <div class="col-4">
             <div class="tabDetails2">
@@ -64,12 +64,17 @@
                        <div class="mb-2 mt-2 c1">Inclusive of all taxes</div>
                        <div class="mb-2 mt-2 c1">15 tablets in 1 strip</div>
                 </div>
-               
+
                  <div class="text-center mb-3">
-                  <button class="btnFilled">ADD TO CART</button>
+                  <ng-container *ngIf="productDetails?.quantity == 0 else multiple">
+                    <button class="btnFilled" (click)="addtocart(productDetails)">ADD TO CART</button>
+                  </ng-container>
+                  <ng-template #multiple>
+                    <button  class="btnCart" (click)="removeItem(productDetails)">-</button>  {{productDetails?.quantity}} <button  class="btnCart" (click)="addtocart(productDetails)">+</button> &nbsp;
+                  </ng-template>
                  </div>
             </div>
-            
+
         </div>
     </div>
     <div class="row mt-4">
@@ -79,22 +84,22 @@
                 <p>
                  One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
                  </p>
-                
+
              </div>
              <h4>Benefits</h4>
             <div class="pb-2">
                 <p>
                  One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
                  </p>
-                
+
              </div>
              <h4>Side Effects</h4>
             <div class="pb-2">
                 <p>
                  One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae. One Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, iste, architecto ullam tenetur quia nemo ratione tempora consectetur quos minus voluptates nisi hic alias libero explicabo reiciendis sint ut quo nulla ipsa aliquid neque molestias et qui sunt. Odit, molestiae.
                  </p>
-                
+
              </div>
         </div>
-    </div> 
+    </div>
 </div>

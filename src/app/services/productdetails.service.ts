@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { catchError, of } from 'rxjs';
 
 
 @Injectable({
@@ -94,7 +95,15 @@ export class ProductdetailsService {
   getAllProducts(){
     const productUrl = 'http://localhost:3000/products';
 
-    return this.httpClient.get(productUrl); 
+    return this.httpClient.get(productUrl).pipe(catchError(() => {
+      return of('data not available at this time');
+    }));
+  }
+
+  getAllCategories(){
+    const categoriesUrl = 'http://localhost:3000/categories';
+
+    return this.httpClient.get(categoriesUrl);
   }
 
   viewProduct(getProductId: any){

@@ -10,7 +10,7 @@
             <li class="list-inline-item">
                 SHOP CART
             </li>
-        
+
         </ul>
     </div>
     </div>
@@ -31,30 +31,30 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="cart_item">
+                  <tr class="cart_item" *ngFor="let pd of products">
                     <td class="product-remove text-center">
-                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true" (click)="removeItem(pd)"></i>
                     </td>
-                    <td class="product-thumbnail"><a href="javascript: void(0);"><img alt="product" src="../../../assets/7-2-600x700.jpg"></a></td>
-                    <td class="product-name"><a href="javascript: void(0);">dolo 650</a>
+                    <td class="product-thumbnail"><a href="javascript: void(0);"><img alt="product" src="{{pd.productImg}}"></a></td>
+                    <td class="product-name"><a href="javascript: void(0);">{{pd.productName}}</a>
                       </td>
-                    <td class="product-price"><span class="amount"><i class="fa fa-inr"></i>&nbsp;36.00</span></td>
+                    <td class="product-price"><span class="amount"><i class="fa fa-inr"></i>&nbsp;{{pd.offerPrice}}</span></td>
                     <td class="product-quantity"><div class="quantity buttons_added">
-                        
-                        <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
-                        
+
+                        <input type="number" size="4" class="input-text qty text" title="Qty" (change)="updateGrandTotal()" [(ngModel)]="pd.quantity" name="quantity" min="1" step="1">
+
                       </div></td>
-                    <td class="product-subtotal"><span class="amount"><i class="fa fa-inr"></i>&nbsp;36.00</span></td>
+                    <td class="product-subtotal"><span class="amount"><i class="fa fa-inr"></i>&nbsp;{{pd.offerPrice * pd.quantity}}</span></td>
                   </tr>
-                
+
                 </tbody>
                 <tfoot>
                     <tr class="cart_item">
-                      
+
                       <td class="product-quantity text-right" colspan="5"><strong>Total</strong></td>
-                      <td class="product-subtotal"><span class="amount"><i class="fa fa-inr"></i>&nbsp;36.00</span></td>
+                      <td class="product-subtotal"><span class="amount"><i class="fa fa-inr"></i>&nbsp;{{grandTotal}}</span></td>
                     </tr>
-                  
+
                 </tfoot>
               </table>
               <div class="mt-4 mb-3 text-center">

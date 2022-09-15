@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/services/cart-service';
 
 @Component({
   selector: 'app-shopcart',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopcartComponent implements OnInit {
 
-  constructor() { }
+  public products : any = [];
+  public grandTotal !: number;
+  constructor(private cartService: CartService) { }
 
   ngOnInit(): void {
+    this.cartService.getProducts()
+    .subscribe(res=>{
+      this.products = res;
+      this.grandTotal = this.cartService.getTotalPrice();
+    })
+  }
+  removeItem(item: any){
+    this.cartService.removeCompleteItemFromCart(item);
+  }
+  emptycart(){
+    this.cartService.removeAllCart();
+  }
+
+  updateGrandTotal(){
+    this.grandTotal = this.cartService.getTotalPrice();
+
   }
 
 }

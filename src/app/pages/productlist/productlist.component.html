@@ -21,17 +21,16 @@
                 <div class="form-inline">
                     <div class="form-group mb-4">
                       <label for="staticEmail2" class="mr-3">FILTER</label>
-                      <select class="form-control">
-                        <option>ALL CATAGERORIES</option>
-                        <option>CATEGORY 1</option>
-                        <option>CATEGORY 2</option>
+                      <select class="form-control" [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+                        <option value="all">ALL CATAGERORIES</option>
+                        <option *ngFor="let cat of categories" [value]="cat.id">{{cat.categoryName}}</option>
                       </select>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" *ngIf="productData?.length > 0 else noProductsData">
        <div class="col-3" *ngFor="let pd of productData">
           <div class="prodBox mb-3">
             <img src="{{pd.productImg}}" alt="Medicine"/>
@@ -53,12 +52,21 @@
                     <span class="pricePer">{{pd.pricePercentile}}% off</span>
                 </div>
                 <div class="text-center">
-                    <button class="btnCart"><i class="fa fa-shopping-cart"></i> <span>ADD CART</span></button>&nbsp;&nbsp;
+                    <!-- <ng-container *ngIf="pd.quantity == 0 else multiple"> -->
+                      <button class="btnCart" (click)="addtocart(pd)"><i class="fa fa-shopping-cart" ></i> <span>ADD CART</span></button>&nbsp;&nbsp;
+                    <!-- </ng-container> -->
+
+                    <!-- <ng-template #multiple>
+                      <button  class="btnCart" (click)="removeItem(pd)">-</button>  {{pd.quantity}} <button  class="btnCart" (click)="addtocart(pd)">+</button> &nbsp;
+                    </ng-template> -->
                     <button class="btnCart" [routerLink]="['/productdetails', pd.id]"><i class="fa fa-eye" aria-hidden="true"></i><span>VIEW DETAILS</span></button>
                 </div>
              </div>
           </div>
        </div>
     </div>
+    <ng-template #noProductsData>
+      <p>No Products Found</p>
+    </ng-template>
 </div>
 
