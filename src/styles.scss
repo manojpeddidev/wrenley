@@ -81,9 +81,6 @@ body{
     font-size: 34px;
     text-align: center;
 }
-.titleImg {
-
-}
 .mainHeading{
     
     img{
@@ -144,4 +141,57 @@ body{
         font-weight: 600;
     }
    
+}
+.noProductsData{
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #ccc;
+    i{
+        font-size: 48px;
+    margin-bottom: 2rem;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+.ng-autocomplete {
+    width:100%;
+    max-width: 600px;
+    display: table;
+    margin: 0 auto;
+    .fa-search{
+      position: absolute;
+      color: #ccc;
+      right: 14px;
+      z-index: 9999;
+    }
+    .autocomplete-container {
+      box-shadow: none;
+      position: relative;
+      overflow: visible;
+      height: 40px;
+      border-radius: 5px;
+      border: 0px solid #ccc !important;
+  }
+  .autocomplete-container .input-container input {
+  
+      border-radius: 5px;
+      border: 1px solid #ccc !important;
+  }
+  }
+  .autocomplete-container .input-container .x {
+    right: 50px;
+}
+.autocomplete-container .input-container .x i {
+    color: #cf0000;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.autocomplete-container .suggestions-container ul li a {
+    padding: 6px 15px !important;
+    color: #912a70 !important;
+    font-size: 14px !important;
 }

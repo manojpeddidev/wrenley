@@ -70,7 +70,11 @@
                     <button class="btnFilled" (click)="addtocart(productDetails)">ADD TO CART</button>
                   </ng-container>
                   <ng-template #multiple>
-                    <button  class="btnCart" (click)="removeItem(productDetails)">-</button>  {{productDetails?.quantity}} <button  class="btnCart" (click)="addtocart(productDetails)">+</button> &nbsp;
+                    <div class="addRemove">
+                    <i class="fa fa-minus-circle" (click)="removeItem(productDetails)"></i>
+                   <strong>{{productDetails?.quantity}}</strong> 
+                    <i class="fa fa-plus-circle" (click)="addtocart(productDetails)"></i>
+                </div>
                   </ng-template>
                  </div>
             </div>
